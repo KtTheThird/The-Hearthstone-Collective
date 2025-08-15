@@ -1,0 +1,250 @@
+html {
+    font-size: 12px; /* Rem Size */
+    background-color: #F5F5DC;  /* Warm Cream */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation*/
+nav {
+    width: 100%;
+    background-color: #C04000; /* Terra Cotta */
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    border-bottom: #FFDB58 solid 0.2rem; /* Spicy Mustard Yellow */
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0 2rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFC200; /* Golden Yellow */
+}
+
+nav ul li a:hover {
+    color: #ffe17e; /* Terra */
+}
+
+nav h1 {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    nav ul li a {
+        font-size: 2rem;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        justify-content: end;
+        width: 70%;
+    }
+
+    nav ul li {
+        margin: 0 3rem;
+    }
+
+    nav .abr {
+        color: #ffffff; /* White */
+        display: block;
+        margin: 0 2rem;
+        font-size: 2.5rem;
+    }
+    
+
+}
+
+@media screen and (min-width: 1200px) {
+    nav ul li a {
+        font-size: 2rem;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        justify-content: end;
+        width: 30%;
+    }
+
+    nav ul li {
+        margin: 0 3rem;
+    }
+
+    nav .nonA {
+        display: block;
+        margin: 0 2rem;
+        font-size: 2.5rem;
+        color: #ffffff; /* White */
+    }
+    
+    nav .abr {
+        display: none;
+    }
+
+}
+
+/*header*/
+header {
+    width: 100%;
+    background-color: #85644c; /* Saddle Brown */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.8;
+    max-height: 800px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.headT {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* White */
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .headT {
+        top: 40%;
+        font-size: 4.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .headT {
+        top: 50%;
+        font-size: 6rem;
+    }
+    
+}
+/*Main Content*/
+main {
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    background-color: #FDF5E6; /* Old Lace */
+}
+
+main section {
+    padding: 2rem;
+    text-align: center;
+}
+
+main section h1 {
+    font-size: 3rem;
+    color: #D2691E; /* Cinnamon Red */
+    margin-bottom: 1rem;
+}
+
+main section h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #8B4513; /* Saddle Brown */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main section .imgCar {
+    margin: 2rem auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+main section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .imgCar {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    main section img {
+        object-fit: cover;
+        width: 32%;
+        height: 300px;
+    }
+    
+}
+
+footer {
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    background-color: #C04000; /* Terra Cotta */
+    color: #ffffff; /* White */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(254, 255, 190);
+}
+
+@media screen and (min-width: 768px) {
+    footer ul {
+        justify-content: center;
+    }
+
+    footer a {
+        margin: 0 5px;
+        font-size: 1.2rem;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: center;
+    }
+    footer p {
+        margin: 0 3px
+    }
+}
